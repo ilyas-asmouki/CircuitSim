@@ -10,7 +10,7 @@ public:
     Component(const std::string& name);
     virtual ~Component();
 
-    virtual void stamp(Eigen::MatrixXd& conductance, Eigen::VectorXd& sources, int timestep) = 0;
+    virtual void stamp(Eigen::MatrixXd& conductance, Eigen::VectorXd& sources, double timestep) = 0;
 
 protected:
     std::string name;
