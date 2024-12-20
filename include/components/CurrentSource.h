@@ -8,7 +8,7 @@ public:
     CurrentSource(const std::string& name, double current, uint8_t node1, uint8_t node2);
     ~CurrentSource();
 
-    void stamp(Eigen::MatrixXd& conductance, Eigen::VectorXd& sources, double timestep) override;
+    void stamp(Matrices* matrices, double timestep) override;
 
 private:
     double current = 0;
